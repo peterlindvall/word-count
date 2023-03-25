@@ -1,0 +1,7 @@
+*.iml
+.idea
+.DS_Store
+.cpcache/
+.rebel_readline_history
+resources/public/js/dev_main.js
+target/

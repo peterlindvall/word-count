@@ -1,0 +1,13 @@
+{:deps {org.clojure/clojurescript {:mvn/version "1.11.60"}
+        reagent/reagent {:mvn/version "1.1.1"}
+        cljsjs/react {:mvn/version "17.0.2-0"}
+        cljsjs/react-dom {:mvn/version "17.0.2-0"}
+        com.bhauman/figwheel-main {:mvn/version "0.2.18"}
+        com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}}
+ :paths ["src" "resources"]
+
+ ;; clj -M:dev
+ ;; clj -M:prod
+ :aliases {:dev {:main-opts ["-m" "figwheel.main" "-co" "dev.build.edn" "-b" "dev" "-r"]}
+           :prod {:main-opts ["-m" "figwheel.main" "-co" "prod.build.edn" "-bo" "prod"]}}
+ }
