@@ -50,11 +50,7 @@
     words))
 (comment
   (count-words "aaa aaa.\n %bbb bbb bbb\n\n \n\n\nccc ccc ccc\n\\documentclass")
-  (println "aaa aaa.\n %bbb bbb bbb\nccc ccc ccc\n\\documentclass")
-  (remove-comments (str/split-lines "aaa aaa.\n\n \n\n%bbb bbb bbb\nccc ccc ccc"))
-  (count (str/split "aaa aaa. ccc ccc ccc" #"\s+"))
   (remove-words ["asd" "\\autocite{wittg:23}" "\\emph{kursiverat}"])
-  (str/replace-all "\\emph{adsf} keep \\emph{jkl}" #"\\emph\{(.+)\}" "$1")
   (str/replace "\\emph{adsf} \\emph{qwer}" #"\\emph\{(\w+)\}" "$1")
 )
 
