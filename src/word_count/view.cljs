@@ -2,8 +2,8 @@
   (:require [word-count.db :refer [db-atom]]
             [word-count.logic :as logic]))
 
-(def red "crimson")
-(def blue "mediumblue")
+(def green "ForestGreen")
+(def blue "MediumBlue")
 
 (defn slider-value [db]
   (if (:use-filter db)
@@ -18,7 +18,7 @@
          :style  {:border "1px solid gray"}}
    [:rect {:width  (str progress "%")
            :height "8px"
-           :style  {:fill       (if (> progress 90) red blue)
+           :style  {:fill       (if (> progress 90) green blue)
                     :transition "400ms"}}]])
 
 (defn app-component
